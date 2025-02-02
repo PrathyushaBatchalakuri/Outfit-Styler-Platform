@@ -1,0 +1,132 @@
+.flipcards
+{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top:1%;
+    margin-left:5%;
+    margin-right:5%;
+    
+
+}
+.container
+{
+    width:300px;
+    height:400px;
+    perspective: 1000px;
+    margin-right: 25px; /* Add margin between cards */
+
+}
+.cardd{
+    height:100%;
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(69, 61, 61, 0.2);
+    border: 5px solid white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1500ms;
+    cursor: pointer;
+}
+
+.cardd:hover{
+    transform: rotateY(180deg)
+}
+.front,
+.back{
+    height:100%;
+    width:100%;
+    position:absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.front
+{
+    background-color:white
+}
+.back
+{
+    background-color:white;
+    transform: rotateY(180deg);
+}
+img {
+    width: 100%;
+    height: 16em;
+    object-fit: contain;
+  }
+  a {
+    all: initial;
+    text-decoration: none;
+    color: inherit;
+  }
+  /* Styled header */
+
+  /* Styled header */
+.ocassion-header {
+    font-size: 28px; /* Larger font size for the header */
+    color: #333; /* Dark text color */
+    text-align: center; /* Centered text */
+    margin-bottom: 30px; /* Spacing below the header */
+  }
+  
+  /* Container for the flipcards section */
+  .c1 {
+    padding-bottom: 10px; /* Reduce padding at the bottom to move the cards up */
+  }
+  
+  /* Container for the personalization section with more prominence */
+  .personalize-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: center;
+    margin-top: 20px; /* Less spacing between flipcards and personalization */
+    padding: 0px; /* More padding for emphasis */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Header style for the personalized section */
+  .personalize-header {
+    font-size: 24px; /* Larger font size to stand out */
+    color: #444; /* Dark text color */
+    text-align: center; /* Center text */
+    margin-bottom: 15px; /* Spacing below the header */
+  }
+  
+  /* Style for the Personalize button */
+  .personalize-button {
+    padding: 12px 25px; /* Larger padding for a bigger button */
+    border: none;
+    background-color: #FAECEC; /* Yellow for high visibility */
+    color: #444; /* Dark text color */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    width: 220px; /* Wider button */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Larger font size */
+    border-radius: 5px; /* Rounded edges */
+  }
+  
+  /* Hover effect for the Personalize button */
+  .personalize-button:hover {
+    transform: scale(1.08); /* More pronounced scaling on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Additional shadow on hover */
+  }
+  /* Additional information section */
+.additional-info {
+    padding: 10px; /* Additional padding */
+    font-size: 16px; /* Consistent font size */
+    color: #555; /* Dark gray for text */
+    text-align: center; /* Centered text */
+    margin-top: 0px; /* Space between content */
+  }
+  
+  /* Separator line for visual clarity */
+  .separator-line {
+    height: 2px; /* Thickness of the separator */
+    background-color: #ddd; /* Light gray color for the separator */
+    margin: 15px 0; /* Space above and below the separator */
+  }

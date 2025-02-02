@@ -1,0 +1,73 @@
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:300px;
+  background-color: #FAECEC; /* Example background color */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+
+}
+.cara{
+  display: flex ;
+  margin-left: 40px;
+  align-items: center;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.product--image {
+  width: 100%;
+  height: 16em;
+  object-fit: contain;
+}
+
+/* Formal.css */
+
+/* Add styles for the buttons */
+.flex-container .col1 button {
+margin-bottom: 10px; /* Add some spacing between buttons */
+padding: 10px 20px; /* Add padding for better appearance */
+border: none;
+background-color: #f0f0f0;
+cursor: pointer;
+transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Add hover effect */
+.flex-container .col1 button:hover {
+transform: scale(1.1); /* Scale up the button on hover */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+}
+
+

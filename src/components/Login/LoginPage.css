@@ -1,0 +1,63 @@
+/* Common styles for input fields and buttons */
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FAECEC;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Login container styles */
+  .login-container,
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 50px auto; /* Center the container horizontally */
+    background-color: #f9f9f9;
+    height:500px;
+    width:50%;
+  }
+  
+  /* Heading styles */
+  .login-container h2,
+  .register-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Additional styles for registration page */
+  .register-container {
+    background-color: #f0f0f0;
+  }
+  
+  /* Navigation button styles */
+  .login-container p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .login-container button {
+    background-color: rgba(245,151,148); /* Light red for login button */
+  }
+  

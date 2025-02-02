@@ -1,0 +1,279 @@
+/* Container for the events section */
+
+  
+  .react-calendar {
+    border: 1px solid #d0d0d0; /* Light border for the calendar */
+    border-radius: 10px; /* Round the corners */
+    background: #fafafa; /* Light background color */
+    width:800px;
+    height:400px  }
+  
+  .react-calendar__navigation {
+    background-color: #f0f0f0; /* Lighter background for the navigation */
+    border-bottom: 1px solid #d0d0d0; /* Border at the bottom of the navigation */
+  }
+  
+  .react-calendar__navigation button {
+    color: #444; /* Darker text color */
+    padding: 10px;
+    font-size: 16px; /* Consistent font size */
+  }
+  
+  .react-calendar__month-view__days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .react-calendar__tile {
+    border-radius: 5px; /* Round the corners of the tiles */
+    padding: 10px; /* Add padding to the tiles */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition effects */
+  }
+  
+  .react-calendar__tile--now {
+    background-color: #cceeff; /* Highlight for the current day */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #888; /* Darker background for selected tile */
+    color: white; /* White text for selected tile */
+  }
+  
+  .react-calendar__tile--weekend {
+    background-color: #ffebcc; /* Different background for weekends */
+  }
+  
+  .custom-tile-content {
+    font-size: 12px; /* Smaller font for tile content */
+    text-align: center;
+    color: #444; /* Default text color */
+  }
+  
+  .content-bottom {
+    font-size: 10px; /* Even smaller for bottom content */
+    color: #666; /* Slightly lighter text color */
+  }
+/* Styling for the carousel to match the "upcoming-events" style */
+/* Styling for the carousel to match the "upcoming-events" style */
+.carousel {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the ends */
+    align-items: center; /* Align content and buttons vertically */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    padding: 20px; /* Consistent padding */
+    margin: 20px; /* Consistent margin */
+    background-color: #FAECEC; /* Same background color as the original section */
+    font-family: Arial, sans-serif; /* Consistent font-family */
+    font-size: 16px; /* Consistent font size */
+    width: 400px; /* Match the width with the "upcoming-events" section */
+  }
+  
+  /* Navigation buttons */
+  .carousel-btn {
+    border: none; /* No border for clean look */
+    background: transparent; /* Transparent background */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Arrow buttons (previous and next) */
+  .prev-btn,
+  .next-btn {
+    font-size: 20px; /* Larger font for arrows */
+    color: #444; /* Consistent text color */
+    padding: 10px; /* Add padding for button area */
+  }
+  
+  /* Hover effect for navigation buttons */
+  .carousel-btn:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    color: #444; /* Same color to maintain consistency */
+  }
+  
+  /* Content area within the carousel */
+  .carousel-content {
+    flex-grow: 1; /* Allow the content area to grow and fill the space */
+    text-align: center; /* Center the text horizontally */
+    padding: 10px; /* Additional padding */
+    margin: 0 10px; /* Add some margin to avoid button overlap */
+  }
+  
+  /* Heading style inside the carousel */
+  .carousel-content h2 {
+    font-size: 24px; /* Larger font size for headers */
+    color: #444; /* Darker text color for headers */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  /* Paragraph style for event details */
+  .carousel-content p {
+    font-size: 16px; /* Consistent font size */
+    color: #444; /* Consistent text color */
+    margin: 10px 0; /* Spacing between event details */
+  }
+  
+  /* Style for the buttons inside the carousel */
+  .carousel-content button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    background-color: #E0DADA; /* Consistent background */
+    color: #444; /* Consistent text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    margin-top: 10px; /* Spacing above the button */
+    width: 150px; /* Consistent button width */
+  }
+  
+  /* Hover effect for buttons */
+  .carousel-content button:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  }
+  
+  /* Style for different event-specific button colors */
+  .carousel-content button.meeting {
+    background-color: #80B1FF; /* Light blue for meetings */
+  }
+  
+  .carousel-content button.math {
+    background-color: #7FDB7D; /* Light green for math */
+  }
+  
+  .carousel-content button.renovation {
+    background-color: #FF8A80; /* Light red for renovation */
+  }
+  
+  /* Styling for the today's weather section */
+.today-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text to the left */
+    width: 400px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Same shadow style */
+    padding: 20px; /* Consistent padding */
+    margin: 20px; /* Consistent margin */
+    background-color: #FAECEC; /* Same background color */
+    font-family: Arial, sans-serif; /* Consistent font family */
+    font-size: 16px; /* Base font size */
+  }
+  
+  /* Header styling */
+  .today-weather h2 {
+    font-size: 24px; /* Larger font for headers */
+    color: #444; /* Dark text color for headers */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  /* Style for the weather details */
+  .weather-details {
+    font-size: 16px; /* Maintain consistent font size */
+    color: #444; /* Text color */
+    margin: 10px 0; /* Spacing between elements */
+  }
+  
+  /* Style for the button in the weather section */
+  .today-weather button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none;
+    background-color: #E0DADA; /* Light gray background for buttons */
+    color: #444; /* Dark text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Transition for smooth hover effects */
+    margin-top: 10px; /* Spacing between button and other elements */
+    width: 150px; /* Consistent button width */
+  }
+  
+  /* Hover effect for buttons */
+  .today-weather button:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  /* Style for selected button */
+  .today-weather button.selected {
+    background-color: #777; /* Change background color for the selected button */
+    color: #fff; /* White text for selected button */
+  }
+  
+  .c2
+  {
+    border-right: 0px;
+  }
+  /* Wrapper for the two-column layout */
+.calendar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content at the top */
+    padding: 20px; /* Padding around the container */
+    gap: 380px; /* Gap between the columns */
+  }
+  
+  /* Left-side styling for the calendar */
+  .left-side {
+    flex: 1; /* Take up the remaining space */
+    display: flex;
+    justify-content: center; /* Center the calendar horizontally */
+    align-items: center; /* Center the calendar vertically */
+  }
+  
+  /* Right-side styling for the carousel and weather sections */
+  .right-side {
+    flex: 1; /* Equal width to the left-side */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    gap: 20px; /* Space between elements in the right-side */
+  }
+  .today-weather {
+    display: flex;
+    flex-direction: row; /* Change to row to align elements horizontally */
+    justify-content: space-between; /* Create space between elements */
+    align-items: center; /* Center vertically */
+    width: 400px; /* Width of the container */
+    height: auto; /* Auto height based on content */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Consistent padding */
+    margin: 20px; /* Consistent margin */
+    background-color: #FAECEC; /* Light background */
+    font-family: Arial, sans-serif; /* Consistent font family */
+    font-size: 16px; /* Base font size */
+  }
+  
+  /* Style for the weather details (aligned to the left) */
+  .weather-details {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align text at the top */
+    font-size: 16px; /* Maintain consistent font size */
+    color: #444; /* Text color */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  /* Style for the button in the weather section */
+  .today-weather button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    background-color: #E0DADA; /* Light gray background */
+    color: #444; /* Dark text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transitions */
+    margin-top: 10px; /* Space between button and text */
+    width: 150px; /* Consistent button width */
+  }
+  
+  /* Positioning the image on the right */
+  .weather-image {
+    align-self: center; /* Center the image vertically */
+    margin-left: auto; /* Push image to the right */
+    width: 100px; /* Set the image width */
+    height: 100px; /* Set the image height */
+  }

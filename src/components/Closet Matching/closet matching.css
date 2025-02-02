@@ -1,0 +1,91 @@
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col1,.col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ /* Align items to the start of the container */
+    width: 400px; 
+    height:400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left:5%;
+    text-align: center;
+    font-family: arial;
+    overflow-y: auto; /* Add scrollbar if content overflows vertically */
+
+}
+
+.flex-container .col3 button {
+    margin-bottom: 10px; /* Add some spacing between buttons */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none;
+    background-color: #FAECEC; /* Set background color */
+    color: #444; /* Set text color */
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.flex-container .col3 button.selected {
+    background-color: #777; /* Change background color for the selected button */
+    color: #fff; /* Change text color for the selected button */
+}
+
+/* Add hover effect */
+.flex-container .col3 button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+}
+
+/* Add styles for the buttons */
+.flex-container .col1 button {
+    margin-bottom: 50px; /* Add some spacing between buttons */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none;
+    background-color: #FAECEC; /* Set background color */
+    color: #444; /* Set text color */
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Style for the selected button */
+.flex-container .col1 button.selected {
+    background-color: #777; /* Change background color for the selected button */
+    color: #fff; /* Change text color for the selected button */
+}
+
+/* Add hover effect */
+.flex-container .col1 button:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+}
+
+/* Style for the image */
+/* Style for the image */
+.flex-container .col3 button.special {
+    border-radius: 50%; /* Make the button rounded */
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    font-size: 12px; /* Set font size to make it smaller */
+    padding: 0px; 
+    margin-top: 10px; /* Add some margin for separation */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 80px; /* Adjust width */
+    height: 80px; /* Adjust height */
+}
+
+.flex-container .col3 button.special:hover {
+    background-color: #333; /* Darken the background color on hover */
+}

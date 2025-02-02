@@ -1,0 +1,92 @@
+.navbar {
+    background-color: #FAECEC;
+    display: flex;
+    align-items: center;  
+    height: 15vh;
+  }
+
+.website-name {
+    font-size: 60px;
+    font-family: 'Cambria';
+    color: black;
+    
+}
+.navlinks
+{
+    display: flex;
+    align-items: center;  
+    justify-content: flex-end;
+    width:100%;
+
+}
+.navlinks a {
+    margin-left:3%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.navlinks li{
+    display: flex;
+    color: black;
+    font-weight: bold ;
+    font-size: 20px;
+    align-items: center;
+    
+}
+
+.navlinks a:last-child{
+    margin-right:3%;
+}
+
+.menu-icon
+{
+    display: none;
+}
+
+.navlinks li:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+@media screen and (max-width:800px){
+    .menu-icon
+    {
+        display: inline;      
+        width: 90%;
+    }
+    .navlinks
+    {
+        display: none;
+    }
+    .navlinks.mobile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+    .navlinks.mobile a
+    {
+        margin-top: 20px;
+        width:90%;
+        border-radius: 20px; 
+        margin-right: 50px;
+    }
+    .navlinks.mobile a:first-child
+    {
+        margin-top: 5px;
+        
+    }
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+   
+
+    
+}
